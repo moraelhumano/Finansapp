@@ -598,3 +598,17 @@ ul.social-buttons {
   .btn-xl .badge {
     color: #fed136;
     background-color: white; }
+
+body {
+  overflow: hidden; }
+  body .masthead .container {
+    color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 40px; }
+    body .masthead .container .carousel {
+      max-width: 400px;
+      margin: 0 auto; }
+      body .masthead .container .carousel .carousel-slide .carousel-item .btn {
+        background-color: #fed136; }

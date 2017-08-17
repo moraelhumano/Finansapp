@@ -1,0 +1,23 @@
+body {
+  overflow: hidden;
+  .masthead {
+    .container {
+      color: black;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 40px;
+      .carousel {
+        max-width: 400px;
+        margin: 0 auto;
+        .carousel-slide {
+          .carousel-item {
+            .btn {
+              background-color: $theme-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
