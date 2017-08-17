@@ -10,13 +10,16 @@ body {
       .carousel {
         max-width: 400px;
         margin: 0 auto;
-        .carousel-slide {
           .carousel-item {
+            .card{
+              h6 {
+                color: red;
+              }
+            }
             .btn {
               background-color: $theme-primary;
             }
           }
-        }
       }
     }
   }

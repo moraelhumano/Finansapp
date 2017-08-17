@@ -610,5 +610,7 @@ body {
     body .masthead .container .carousel {
       max-width: 400px;
       margin: 0 auto; }
-      body .masthead .container .carousel .carousel-slide .carousel-item .btn {
+      body .masthead .container .carousel .carousel-item .card h6 {
+        color: red; }
+      body .masthead .container .carousel .carousel-item .btn {
         background-color: #fed136; }
