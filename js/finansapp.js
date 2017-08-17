@@ -40,6 +40,24 @@ $(function () {
      $('.carousel').carousel('next');
   });
   
+  /*Hammer JS*/
+  var carousel = document.getElementById('carousel');
+  var hammertime = new Hammer(carousel);
+  hammertime.on('swipeleft', function(ev) {
+  	$('.carousel').carousel('next');
+  });
+
+  hammertime.on('swiperight', function(ev) {
+  	$('.carousel').carousel('prev');
+  });
+  
 });
 
+
+/*Fullscreen in some phones*/
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        window.scrollTo(0, 1);
+    }, 0);
+});
 
