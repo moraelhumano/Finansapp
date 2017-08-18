@@ -12,12 +12,17 @@ body {
         margin: 0 auto;
           .carousel-item {
             .card{
+              height: 70vh;
               h6 {
                 color: red;
               }
             }
             .btn {
               background-color: $theme-primary;
+              width: 80%;
+              position: absolute;
+              bottom: 15px;
+              left: 10%;
             }
           }
         .carousel-control-next {

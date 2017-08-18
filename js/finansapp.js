@@ -1,7 +1,7 @@
-var url = 'renta=1750.0&ahorro=1000.0&personales=1500.0';
+//var url = 'renta=1750.0&ahorro=1000.0&personales=1500.0';
 
 function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(url/*window.location.search.substring(1)*/),
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
         sURLVariables = sPageURL.split('&'),
         sParameterName,
         i;
@@ -19,7 +19,6 @@ $(function () {
   var renta = getUrlParameter('renta'),
       ahorro = getUrlParameter('ahorro'),
       personales = getUrlParameter('personales');
-  console.log(renta + ' ' + ahorro + ' ' + personales);
   
   /*Initialize nav menu*/
   $('.nav-item.renta').click(function () {
@@ -39,6 +38,13 @@ $(function () {
   $('[data-slide="next"]').click(function () {
      $('.carousel').carousel('next');
   });
+  
+  /* Fill suggested information*/
+  $('.card.renta h3 span').html('$ ' + renta);
+  $('.card.ahorro h3 span').html('$ ' + ahorro);
+  $('.card.personales h3 span').html('$ ' + personales);
+  
+  /*Fill actual information*/
   
   /*Hammer JS*/
   var carousel = document.getElementById('carousel');
